@@ -1,0 +1,79 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+h1{
+    text-align: center;
+    padding: 20px;
+    color: #000000;
+    
+}
+
+header{
+    display: flex;
+    align-items: center;
+    background-color: #004d40;
+    justify-content: center;
+
+}
+
+nav {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    color: #fffdfd;
+    margin-left: 60px;
+    padding: 20px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav a:hover, nav a:focus {
+    background:#108870;
+    color: #fff;
+}
+
+a{
+    color: #f0eaea;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer{
+    text-align: center;
+}
+
+/* Les Styles pour la page groupes-jeunes.html*/
+
+h2{
+    padding: 20px;
+}
+
+
+.smock{
+    gap: 40px;
+    display: flex;
+}
+
+.groupe{
+    text-align: center;
+    width: 300px;
+    height: 250px;
+    margin: 10px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(5, 6, 6, 0.1);
+}
+
+.groupe img{
+    width: 290px;
+    height: 190px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

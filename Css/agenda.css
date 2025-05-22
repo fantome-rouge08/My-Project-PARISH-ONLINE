@@ -21,6 +21,7 @@ header{
     justify-content: center;
 }
 
+
 nav{
     list-style: none;
     display: flex;
@@ -44,32 +45,74 @@ nav li a{
     font-weight: bold;
 }
 
+
+
 /* Style pour l'agenda*/
 
-.agenda-container{
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 0 1rem;
+.calendrier-annuel{
+    display: inline-block;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+
+h2{
+    text-align: center;
+    padding: 10px;
+}
+
+.mois{
+    display: inline-block;
+    margin-bottom: 3rem;
+    margin-right: 5rem;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    width: 400px;
+
+}
+
+.mois h3{
+    background-color:#929191;
+    color: rgb(255, 255, 255);
+    padding: 0.5rem;
+    border-radius: 5px;
     text-align: center;
 }
 
-.agenda{
+.calendrier{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(7,1fr);
+    gap: 5px;
+    padding: 5px;
+    border-radius: 10px;
 }
 
-.jour{
+
+
+.chiffre-jour{
     background-color: white;
     border: 1px solid #ccc;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
-.jour h3{
-    color: #004d40;
-    margin-bottom: 0.5rem;
+.nom-jour{
+    background-color:#929191;
+    color: #fff;
+    text-align: center;
+    padding: 2px;
+    width: 80x;
+    font-size: 15px;
+}
+
+
+.jour-vide{
+    background-color: transparent;
+    border: none;
 }
 
 /* Style pour le pied de la page*/

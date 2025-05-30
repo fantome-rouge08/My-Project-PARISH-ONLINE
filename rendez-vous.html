@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saint-Leonard Officiel</title>
+    <link rel="stylesheet" href="./Css/style-chruch.css">
+</head>
+<body> 
+    <h1>Paroisse Saint-Leonard</h1>
+    <header>
+        <nav>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="a-propos.html">A propos</a></li>
+            <li><a href="groupes-jeunes.html">Groupes et communautes</a></li>
+            <li><a href="agenda.html">Agenda</a></li>
+            <li><a href="rendez-vous.html">Prise de rendez-vous</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+        </nav>
+    </header>
+
+    <main>
+        <h2 id="rdv"> Formulaire de Prise de rendez-vous</h2>
+        <form action="">
+            <label for="nom">Tapez votre nom </label> <br> 
+            <input type="text" placeholder=" ex:longo">
+            <br>
+            <br>
+            <label for ="prénom" >Tapez votre prénom </label> <br>
+            <input id ="text" placeholder=" ex: Ainsi">
+            <br>
+            <br>
+            <label for="post-nom">Tapez votre post-nom </label> <br>
+            <input id text ="post-nom" placeholder=" ex:longo">
+            <br>
+            <br>
+            <label for="telephon">Tapez votre numero de telephone </label> <br>
+            <input id="telephon " text ="tel" placeholder=" ex: +243 999586768">
+            <br>
+            <br>
+            <label for="date">Date souhaitée</label> <br>
+            <input type="date" id="date" name="date" required>
+            <br>
+            <br>
+            <label for="heure">Heure (facultatif)</label>
+            <input type="time" id="heure" name="heure">
+            <br>
+            <br>
+            <label for ="objet">Quelle est l'objet de votre rendez-vous ?</label> <br>
+            <br>
+            <br>
+            <div class="choix">
+                <label><input type="radio" name="objet" value="bapteme"> Baptême</label>
+                <label><input type="radio" name="objet" value="communion"> Première communion</label>
+                <label><input type="radio" name="objet" value="confession"> Confession</label>
+                <label><input type="radio" name="objet" value="mariage"> Préparation pour le mariage</label>
+                <label><input type="radio" name="objet" value="entretien"> Entretien spirituel</label>
+            </div>
+            <br>
+            <br>
+            <button class='btn-rdv'onclick="alert('Votre formulaire a ete envoyer avec succes')">Envoyer</button>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,7 +1,8 @@
 
 body {
+    background: url('../Images_Paroisse/1280px-Église_Saint-Léonard.jpg') no-repeat center center fixed;
+    background-size: cover;
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f8f9fa;
     color: #222;
 }
 
@@ -10,13 +11,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.5em 0;
+    margin-top: -10px;
+    padding: 5px;
 }
 
 h1 {
     text-align: center;
-    padding: 20px;
-    color: #0f1112;
+    padding: 10px;
+    color: #fafdff;
 }
 
 nav {
@@ -49,26 +51,23 @@ main {
     flex: 1;
     max-width: 800px;
     margin: 2em auto;
-    background: #fff;
-    padding: 2em;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(44, 62, 80, 0.07);
+    padding: 4em;
     text-align: center;
     color: black;
     font-size: 20px;
+    color: #fff;
 
 }
 
 h2 {
-    color: #000000;
+    color: #ffffff;
     margin-top: 0;
 }
 
 footer {
-    color: #040202;
+    color: #ffffff;
     text-align: center;
-    padding: 1em 0;
-    margin-top: 0;
+    margin-top: -2px;
     font-size: 0.95em;
     letter-spacing: 0.5px;
 }

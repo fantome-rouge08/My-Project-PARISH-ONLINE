@@ -107,19 +107,18 @@ footer{
 }
 
 .groupe{
-    color: black;
     text-align: center;
     width: 300px;
     height: 250px;
     margin: 10px;
-    background: #a39f9f;
+    background:  #0606066b;
     padding: 15px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(5, 6, 6, 0.1);
 }
 
 .groupe h3{
-    color: #1c1a1a;
+    color: #faf8f8;
 }
 
 
@@ -156,7 +155,7 @@ footer{
     margin-bottom: 3rem;
     margin-right: 5rem;
     padding: 1rem;
-    background-color: #c7c0c0;
+    background-color: #787373;
     border-radius: 10px;
     width: 400px;
 
@@ -191,7 +190,7 @@ footer{
 }
 
 .nom-jour{
-    background-color:#929191;
+    background-color:#929291;
     color: #fff;
     text-align: center;
     padding: 2px;
@@ -207,17 +206,17 @@ footer{
 
 
 
+/* Style pour les pages de chaque groupe qui s'affichent  lorqu'on clique sur l'image* (Page_des_groupes)*/
 
-/* Style pour les pages de chaque groupe lorqu'on clique sur l'image*/
 
-
-.famille-chretienne{
+.communauty-container{
+    background: #393e3d6b;
     display: flex;
     align-items: center;
     gap: 100px;
     flex-wrap: wrap;
+    margin-top: 15px;
     padding: 10px 20px;
-    background: #ffffff;
     border-radius: 12px;
 }
 
@@ -228,8 +227,11 @@ footer{
 }
 
 .bio{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(255, 254, 254);
     max-width: 600px;
-    padding-top: -10px;
+    padding-top: 0px;
     flex: 1;
 }
 
@@ -239,14 +241,14 @@ footer{
 }
 
 #joins{
-    color: purple;
+    color: rgb(246, 246, 246);
     font-weight: bold;
-    font-size: 15px;
+    font-size: 22px;
 }
 
 .para-joins{
     font-weight: bold;
-    font-size: 15px;
+    font-size: 22px;
 }
 
 

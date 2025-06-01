@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saint-Leonard Officiel</title>
-    <link rel="stylesheet" href="./Css/style-chruch.css">
+    <link rel="stylesheet" href="../Css/style-chruch.css">
 </head>
 <body> 
     <h1>Paroisse Saint-Leonard</h1>
@@ -20,7 +20,7 @@
     </header>
 
     <main>
-        <h2 id="rdv"> Formulaire de Prise de rendez-vous</h2>
+        <h2 id="rdv"> Formulaire d'insciption au Groupe KA</h2>
         <form action="">
             <label for="nom">Tapez votre nom </label> <br> 
             <input type="text" id="nom" name="nom" placeholder="ex: Longo" required>
@@ -38,22 +38,20 @@
             <input type="number" id="telephone" name="telephone" placeholder="ex: +243 999586768" required>
             <br><br>
 
-            <label for="date">Date souhaitée</label> <br>
-            <input type="date" id="date" name="date" required>
+            <label for="adresse">Tapez votre Adresse Complete</label> <br>
+            <input type="text" id="adresse" name="adresse" placeholder="ex: Avenue de la Paix N°12, Q/CPA , C/Mont-Ngafula" required>
             <br><br>
 
-            <label for="heure">Heure (facultatif)</label> <br>
-            <input type="time" id="heure" name="heure">
+            <label for="age">Tapez votre Age </label> <br>
+            <input type="number" id="age" name="age" placeholder="ex: 18" min="1" required>
             <br><br>
 
-            <label for="objet">Quelle est l'objet de votre rendez-vous ?</label> <br><br>
-            <div class="choix">
-                <label><input type="radio" name="objet" value="bapteme" required> Baptême</label>
-                <label><input type="radio" name="objet" value="communion"> Première communion</label>
-                <label><input type="radio" name="objet" value="confession"> Confession</label>
-                <label><input type="radio" name="objet" value="mariage"> Préparation pour le mariage</label>
-                <label><input type="radio" name="objet" value="entretien"> Entretien spirituel</label>
-            </div>
+            <label for="classe">Tapez votre classe ou niveau d'etudes </label> <br>
+            <input type="text" id="classe" name="classe" placeholder="ex: 3e Litteraire ou 5e litteraire" required>
+            <br><br>
+
+            <label for="motivation">Pourquoi voulez-vous integrer notre communaute ?</label> <br>
+            <textarea id="motivation" name="motivation"></textarea>
             <br><br>
 
             <button class='btn-rdv' type="submit">Envoyer</button>

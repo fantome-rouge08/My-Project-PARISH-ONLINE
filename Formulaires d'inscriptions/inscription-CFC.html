@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,8 @@
     <link rel="stylesheet" href="../Css/style-chruch.css">
     <script src="formulaire.js" defer></script>
 </head>
-<body> 
+
+<body>
     <h1>Paroisse Saint-Leonard</h1>
     <header>
         <nav>
@@ -22,30 +24,46 @@
 
     <main>
         <h2 id="rdv"> Formulaire d'inscription a la Communaute Famille Chretienne</h2>
-        <form action="" class="inscription">
-            <label for="nom">Tapez votre nom </label> <br> 
-            <input type="text" id="nom" name="nom" placeholder="ex: Longo" required>
-            <br><br>
-
-            <label for="prenom">Tapez votre prénom </label> <br>
-            <input type="text" id="prenom" name="prenom" placeholder="ex: Ainsi" required>
-            <br><br>
+        <form action="">
+            <label for="nom">Tapez votre nom </label> <br>
+            <input type="text" id="nom" name="nom" placeholder="ex: Kipaka" required>
+            <br>
+            <br>
 
             <label for="postnom">Tapez votre post-nom </label> <br>
-            <input type="text" id="postnom" name="postnom" placeholder="ex: Longo" required>
-            <br><br>
+            <input type="text" id="postnom" name="postnom" placeholder="ex: Bakari" required>
+            <br>
+            <br>
 
-            <label for="telephone">Tapez votre numero de telephone </label> <br>
+            <label for="prenom">Tapez votre prénom </label> <br>
+            <input type="text" id="prenom" name="prenom" placeholder="ex: Michel" required>
+            <br>
+            <br>
+
+            <label for="age">Tapez votre Age </label> <br>
+            <input type="number" max="60" id="age" name="age" placeholder="ex: 18" min="25" required>
+            <br>
+            <br>
+
+            <label for="telephone">Tapez votre numero de téléphone </label> <br>
             <input type="number" id="telephone" name="telephone" placeholder="ex: +243 999586768" required>
-            <br><br>
+            <br>
+            <br>
+            <label for="age">Tapez votre Age </label> <br>
+            <input type="number" max="60" id="age" name="age" placeholder="ex: 18" min="25" required>
+            <br>
+            <br>
 
-            <label for="adresse">Tapez votre Adresse Complete</label> <br>
-            <input type="text" id="adresse" name="adresse" placeholder="ex: Avenue de la Paix N°12, Q/CPA , C/Mont-Ngafula" required>
-            <br><br>
+            <label for="adresse">Tapez votre Adresse Complète</label> <br>
+            <textarea name="adresse" id="adresse" placeholder="ex: Avenue de la Paix N°12, Q/CPA , C/Mont-Ngafula"
+                required></textarea>
+            <br>
+            <br>
 
-            <label for="motivation">Pourquoi voulez-vous integrer notre communaute ?</label> <br>
+            <label for="motivation">Pourquoi voulez-vous integrer notre communauté ?</label> <br>
             <textarea id="motivation" name="motivation"></textarea>
-            <br><br>
+            <br>
+            <br>
 
             <button class='bouton-inscrip' type="submit">Envoyer</button>
 
@@ -55,4 +73,5 @@
         <p> © Paroisse Saint Leonard | Tous droits reserves</p>
     </footer>
 </body>
+
 </html>

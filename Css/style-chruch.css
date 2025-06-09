@@ -74,13 +74,12 @@ a {
 
 }
 
-.a-propos h2,
-h3,
-h4 {
+.a-propos h2 h3 {
     color: #e1b421;
-    /* Couleur du titre */
     margin-bottom: 1em;
 }
+
+
 
 
 /* Style pour le pied de la page*/
@@ -137,7 +136,6 @@ footer {
 
 .calendrier-annuel {
     display: inline-block;
-    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     padding: 2rem;
 }
@@ -156,15 +154,15 @@ footer {
     margin-bottom: 3rem;
     margin-right: 5rem;
     padding: 1rem;
-    background-color: #787373;
+    background-color: #345544;
     border-radius: 10px;
     width: 400px;
 
 }
 
 .mois h3 {
-    background-color: #929191;
-    color: rgb(255, 255, 255);
+    background-color: #9291912c;
+    color: white;
     padding: 0.5rem;
     border-radius: 5px;
     text-align: center;
@@ -181,8 +179,8 @@ footer {
 
 
 .chiffre-jour {
-    color: black;
-    background-color: rgb(185, 177, 177);
+    color: white;
+    background-color: #9291912c;
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
@@ -191,11 +189,11 @@ footer {
 }
 
 .nom-jour {
-    background-color: #929291;
-    color: #fff;
+    background-color: #9291912c;
+    color: white;
     text-align: center;
     padding: 2px;
-    width: 80x;
+    width: 90x;
     font-size: 15px;
 }
 
@@ -206,7 +204,6 @@ footer {
 }
 
 
-
 /* Style pour les pages de chaque groupe qui s'affichent  lorqu'on clique sur l'image* (Page_des_groupes)*/
 
 
@@ -215,7 +212,6 @@ footer {
     display: flex;
     align-items: center;
     gap: 100px;
-    flex-wrap: wrap;
     margin-top: 15px;
     padding: 10px 20px;
     border-radius: 12px;
@@ -235,14 +231,18 @@ footer {
     border-radius: 15px;
 }
 
+.bio h3 {
+    color: #e1b421;
+    margin-bottom: 1em;
+}
+
 
 .bio {
     font-size: 18px;
     font-weight: 500;
-    color: rgb(255, 254, 254);
+    color: white;
     max-width: 600px;
     padding-top: 0px;
-    flex: 1;
 }
 
 
@@ -252,7 +252,7 @@ footer {
 }
 
 #joins {
-    color: rgb(246, 246, 246);
+    color: white;
     font-weight: bold;
     font-size: 22px;
 }
@@ -274,11 +274,12 @@ footer {
 .choix label {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    font-size: 1rem;
+    font-size: 20px;
+
 }
 
-/* Style des formulaires de rendez-vous */
+
+/* Style des formulaires se trouvant dans les sites*/
 
 form {
     font-size: 22px;
@@ -291,6 +292,8 @@ form {
     padding: 20px;
 }
 
+/* Style pour le titre h2 du formulaire de prise de rendez-vous*/
+
 #rdv {
     margin-left: 30px;
     color: white
@@ -300,25 +303,13 @@ form {
     text-align: center;
     align-items: center;
     width: 150px;
+    height: 30px;
     background: rgb(199, 199, 212);
 }
 
 
-/* Style des formulaires d'inscriptions dans les differents groupes */
 
-.inscription {
-    font-size: 22px;
-    background-color: #3f41416b;
-    margin-left: 30px;
-    margin-top: 20px;
-    margin-right: 600px;
-    border-radius: 10px;
-    border: 3px solid #1c1a1a;
-    padding: 20px;
-}
-
-
-/* Style des boutons pour les formulaires d'inscriptions*/
+/* Style des boutons pour les formulaires d'inscriptions des differents groupes*/
 
 .bouton-inscrip {
     width: 110px;

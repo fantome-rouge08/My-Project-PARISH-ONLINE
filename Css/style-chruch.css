@@ -63,9 +63,9 @@ a {
 
 .a-propos {
     font-size: 17px;
+    max-width: 900px;
     padding: 2em;
     margin: 2em auto;
-    max-width: 900px;
     background: rgba(20, 40, 40, 0.80);
     /* Fond sombre semi-transparent */
     border-radius: 12px;
@@ -75,7 +75,7 @@ a {
 
 }
 
-.a-propos h2 h3 {
+.a-propos h2,h3{
     color: #e1b421;
     margin-bottom: 1em;
 }
@@ -95,18 +95,18 @@ footer {
 
 /* Les Styles pour la page groupes-jeunes.html*/
 
-#commus {
-    padding: 35px;
-    margin: 0;
+#title-groupe {
+    padding: 30px;
+    margin: 5px;
+    font-size: 1.5rem;
 }
 
 
-.smock {
+.smock-container {
     gap: 40px;
     display: flex;
     flex-wrap: wrap;
 }
-
 .groupe {
     text-align: center;
     width: 300px;
@@ -133,11 +133,10 @@ footer {
 
 
 
-/* Style pour l'agenda*/
+/* Style pour la page d'agenda*/
 
 .calendrier-annuel {
     display: inline-block;
-    gap: 2rem;
     padding: 2rem;
 }
 
@@ -200,8 +199,7 @@ footer {
 
 
 .jour-vide {
-    background-color: transparent;
-    border: none;
+    background-color: none;
 }
 
 

@@ -131,6 +131,38 @@ footer {
 }
 
 
+/*Style pour les horaires de messe*/
+
+.messe-container{
+    display: inline-block;
+    margin: 25px;
+    
+}
+.messe-container h2{
+    margin-top: 5px;
+    font-size: 30px;
+}
+
+.hor-messe{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   padding: 15px;
+   flex-wrap: wrap;
+   gap: 80px;
+}
+
+.messe{
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    background: rgba(20, 40, 40, 0.80);
+    border-radius: 10px;
+}
+
+
 
 
 /* Style pour la page d'agenda*/
@@ -201,6 +233,7 @@ footer {
 .jour-vide {
     background-color: none;
 }
+
 
 
 /* Style pour les pages de chaque groupe qui s'affichent  lorqu'on clique sur l'image* (Page_des_groupes)*/

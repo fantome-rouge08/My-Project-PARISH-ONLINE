@@ -25,7 +25,7 @@
 
     <main>
         <h2 id="rdv"> Formulaire d'inscription a la Communaute Famille Chretienne</h2>
-        <form action="">
+        <form action="http://localhost/PHP/cfc.php" method="post">
             <label for="nom">Tapez votre nom </label> <br>
             <input type="text" id="nom" name="nom" placeholder="ex: Kipaka" required>
             <br>
@@ -50,14 +50,9 @@
             <input type="number" id="telephone" name="telephone" placeholder="ex: +243 999586768" required>
             <br>
             <br>
-            <label for="age">Tapez votre Age </label> <br>
-            <input type="number" max="60" id="age" name="age" placeholder="ex: 18" min="25" required>
-            <br>
-            <br>
 
             <label for="adresse">Tapez votre Adresse Complète</label> <br>
-            <textarea name="adresse" id="adresse" placeholder="ex: Avenue de la Paix N°12, Q/CPA , C/Mont-Ngafula"
-                required></textarea>
+            <textarea name="adresse" id="adresse" placeholder="ex: Avenue de la Paix N°12, Q/CPA , C/Mont-Ngafula" required></textarea>
             <br>
             <br>
 
@@ -66,7 +61,7 @@
             <br>
             <br>
 
-            <button class='bouton-inscrip' type="submit">Envoyer</button>
+            <input type="submit" name="valider" value="Envoyer">
 
         </form>
     </main>

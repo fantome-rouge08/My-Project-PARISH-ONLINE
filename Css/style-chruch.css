@@ -162,7 +162,16 @@ footer {
     border-radius: 10px;
 }
 
-
+.messe-special{
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    background: rgba(20, 40, 40, 0.80);
+    border-radius: 10px;
+}
 
 
 /* Style pour la page d'agenda*/
@@ -368,3 +377,5 @@ form {
     color: white;
     font-size: 18px;
 }
+
+

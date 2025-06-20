@@ -1,0 +1,232 @@
+@media screen and (max-width: 900px) {
+        body{
+            margin: 25px;
+            background: url('../Images_Paroisse/1280px-Église_Saint-Léonard.jpg');
+            background-size: cover;
+        }
+         h1{
+            margin-top: 30px;
+        }
+        nav{
+            display: inline-block;
+            margin-right: 50px;
+            padding:20px;
+        }
+        nav li{
+            margin-bottom: 20px;
+        }
+        nav a:hover,
+        nav a:focus{
+            background-color:  #095c5c;
+            color: white;
+        }
+       header{
+            margin-top: 30px;
+            background-color: #3f4141c1;;
+            width:50%;
+       }
+
+       footer{
+        text-align: center;
+       }
+
+       .groupe h3{
+        color: #e1b421;
+       }
+       #title-groupe{
+        font-size: 21px;
+       }
+
+       .messe-container h2{
+        font-size: 25px;
+       }
+
+       .hor-messe{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+       }
+
+       .messe{
+        width: 100%;
+       }
+
+       #title-agenda {
+            text-align: center;
+            padding: 10px;
+            margin-top: -10px;
+        }
+
+        .calendrier-annuel {
+            display: inline-block;
+            padding: 2rem;
+        }
+
+
+
+        .mois {
+            display: inline-block;
+            margin-bottom: 3rem;
+            margin-right: 5rem;
+            padding: 1rem;
+            background-color: #345544;
+            border-radius: 10px;
+            width: 400px;
+
+        }
+
+        .mois h3 {
+            background-color: #9291912c;
+            color: white;
+            padding: 0.5rem;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .calendrier {
+            display: grid;
+            grid-template-columns: repeat(7,1fr);
+            gap: 5px;
+            padding: 5px;
+            border-radius: 10px;
+            width: 10px;
+        }
+
+
+        .chiffre-jour {
+            color: white;
+            background-color: #9291912c;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .nom-jour {
+            background-color: #9291912c;
+            color: white;
+            text-align: center;
+            padding: 2px;
+            width: 90x;
+            font-size: 15px;
+        }
+
+
+        .jour-vide {
+            background-color: none;
+        }
+
+
+
+
+        .choix {
+            display: inline-block;
+            margin-top: -25px;
+        }
+
+        .choix label {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+
+        }
+
+
+    /* Style des formulaires se trouvant dans les sites*/
+
+    form {
+        width: 80%;
+        font-size: 22px;
+        background-color: #3f41416b;
+        margin: 10px;
+        margin-top: 20px;
+        border-radius: 10px;
+        border: 3px solid #1c1a1a;
+        padding: 20px;
+    }
+
+    /* Style pour le titre h2 du formulaire de prise de rendez-vous*/
+
+    #rdv {
+        margin-left: 30px;
+        color: white
+    }
+
+    .btn-rdv {
+        text-align: center;
+        align-items: center;
+        width: 150px;
+        height: 30px;
+        background: rgb(199, 199, 212);
+    }
+
+
+    .communauty-container {
+        width: 90%;
+        background: #393e3d6b;
+        display: inline-block;
+        align-items: center;
+        gap: 100px;
+        margin-top: 15px;
+        padding: 10px 20px;
+        border-radius: 12px;
+    }
+
+    .photo-container img {
+        width: 270px;
+        height: 200px;
+        border-radius: 15px;
+    }
+
+    .photo-container-KA img {
+        position: relative;
+        top: 10px;;
+        width: 260px;
+        height: 200px;
+        border-radius: 15px;
+    }
+
+
+
+    .bio h3,h4{
+        color: #e1b421;
+        margin-bottom: 1em;
+    }
+
+
+    .bio {
+        font-size: 18px;
+        font-weight: 500;
+        color: white;
+        max-width: 600px;
+        padding-top: 0px;
+    }
+
+
+    footer {
+        text-align: center;
+        margin-top: 90px;
+    }
+
+    #joins {
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .para-joins {
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+
+    .contact {
+        padding: 20px;
+        text-align: center;
+        margin: 20px;
+        font-size: 19px;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+    }
+}

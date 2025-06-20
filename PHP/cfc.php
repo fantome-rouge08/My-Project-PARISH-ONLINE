@@ -33,7 +33,7 @@
                 "motivation" => $motivation
                 )
             );
-            echo "<script>alert('Membre ajouté avec succès');</script>";
+            $message="Membre ajoute avec succes";
         }
 
     ?>

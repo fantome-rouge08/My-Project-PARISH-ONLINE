@@ -1,5 +1,5 @@
 body {
-    background: url('../Images_Paroisse/1280px-Église_Saint-Léonard.jpg') no-repeat center center fixed;
+    background: url('../Images_Paroisse/Saint\ Léonard\ Part\ 2.jpeg') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Segoe UI', Arial, sans-serif;
     color: #222;
@@ -16,7 +16,7 @@ header {
 h1 {
     text-align: center;
     padding: 10px;
-    color: #fafdff;
+    color: white;
 }
 
 nav {
@@ -71,7 +71,17 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
+
+        img {
+            display: block;
+            width: 7%;
+            position: relative;
+            left: 10px;
+            bottom: 10px;
+    }
+
         body{
+            background: url('../Images_Paroisse/Saint\ Léonard\ Part\ 2.jpeg') no-repeat centerfixed;
             margin: 25px;
         }
 

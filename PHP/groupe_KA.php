@@ -18,6 +18,7 @@ if (isset($_POST["valider"])) {
     $adresse = $_POST["adresse"];
     $classe = $_POST["classe"];
     $motivation = $_POST["motivation"];
+    
 
     $requete = $bdd->prepare("INSERT INTO `groupe KA` VALUES (0, :nom, :postnom, :prenom, :age, :telephone, :adresse, :classe, :motivation)");
     $requete->execute(

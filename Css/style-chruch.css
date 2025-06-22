@@ -3,11 +3,14 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: url('../Images_Paroisse/1280px-Église_Saint-Léonard.jpg');
+    background: url('../Images_Paroisse/Saint\ Léonard\ Part\ 3.jpeg') no-repeat center fixed;
     background-size: cover;
     color: white;
 }
 
+img{
+    display: none;
+}
 
 
 /*Style pouur le titre h1*/
@@ -354,28 +357,22 @@ form {
 
 /* Style des boutons pour les formulaires d'inscriptions des differents groupes*/
 
-.bouton-inscrip {
-    width: 110px;
-    /* Largeur du bouton*/
-    font-size: 16px;
-    /* Taille de la police*/
-}
 
 .contact {
-    padding: 20px;
-    text-align: center;
-    margin-left: 30px;
+    padding: 5px;
+    margin: 30px;
     font-size: 21px;
     font-weight: bold;
-    color: white;
+    color: rgb(0, 0, 0);
 
-    text-align: center;
+
 }
 
 .footer-contact {
     margin-top: 90px;
-    color: white;
+    color: black;
     font-size: 18px;
+    font-weight: bold;
 }
 
 

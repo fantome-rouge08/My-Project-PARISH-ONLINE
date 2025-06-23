@@ -1,12 +1,13 @@
 @media screen and (max-width: 900px) {
 
     /* Responsive design generale*/
-    img {
-        display: block;
+    #menu-btn{
+        display: flex;
         width: 7%;
         position: relative;
         left: 10px;
         bottom: 10px;
+        cursor: pointer;
     }
 
 
@@ -93,7 +94,7 @@
         padding: 1rem;
         background-color: #345544;
         border-radius: 10px;
-        width: 400px;
+        width: 475px;
 
     }
 
@@ -272,53 +273,26 @@
         color: white;
         font-size: 18px;
     }
-}
-
-@media (min-width: 900px) {
-    #main-nav {
-        display: block !important;
-        position: static;
-        box-shadow: none;
-        width: auto;
-        background: none;
-    }
-
-    #menu-btn {
-        display: none;
-    }
 
     #main-nav {
-        display: none;
-        position: absolute;
-        top: 60px;
-        right: 10px;
-        background: #fff;
-        width: 200px;
+        position: fixed;
+        top: 0;
+        left: -30px;
+        right: auto;
+        width: 220px;
+        height: 50%;
+        background:#3f4141bb;
         box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-        border-radius: 8px;
-        z-index: 100;
-    }
-    #main-nav ul {
-        display: flex;
-        gap: 20px;
-        padding: 0;
-        margin: 0;
-    }
-    #main-nav li {
-        list-style: none;
-        margin: 0;
-        text-align: center;
-    }
-    #main-nav a {
-        text-decoration: none;
-        color: #095c5c;
+        border-radius: 8px 0 0 8px;
+        transform: translateX(-100%);
+        transition: transform 0.3s;
         display: block;
-        padding: 10px;
+        padding-top: 60px;
     }
-    #menu-btn {
-        cursor: pointer;
-        width: 40px;
-        height: 40px;
-        margin: 10px;
+
+    /* Quand le menu est ouvert */
+    #main-nav.open {
+        transform: translateX(0);
     }
 }
+

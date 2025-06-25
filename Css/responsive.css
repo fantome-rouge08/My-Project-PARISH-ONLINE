@@ -1,4 +1,4 @@
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
 
     /* Responsive design generale*/
     #menu-btn{
@@ -246,6 +246,9 @@
         font-size: 17px;
     }
 
+    #joins{
+        font-size: 16px;
+    }
 
     .contact {
         padding: 20px;

@@ -19,7 +19,7 @@ if (isset($_POST["valider"])) {
     $classe = $_POST["classe"];
     $motivation = $_POST["motivation"];
 
-    $requete = $bdd->prepare("INSERT INTO chorale VALUES (0, :nom, :postnom, :prenom, :age, :telephone, :adresse, :classe, :motivation)");
+    $requete = $bdd->prepare("INSERT INTO chorale VALUES (:nom, :postnom, :prenom, :age, :telephone, :adresse, :classe, :motivation)");
     $requete->execute(
         array(
             "nom" => $nom,
@@ -32,5 +32,5 @@ if (isset($_POST["valider"])) {
             "motivation" => $motivation
         )
     );
-    $message = "Membre ajoute avec succes";
+    echo "<script>alert('Membre ajouté avec succès');</script>";
 }

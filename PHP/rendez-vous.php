@@ -4,9 +4,9 @@
     $username="root";
     $passeword="";
     try {
-        $bdd = new PDO("mysql:host=$servername;dbname=parish online", $username, $passeword);
+        $bdd = new PDO("mysql:host=$servername;dbname=parish-rdv", $username, $passeword);
         $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        //echo "Connexion reussie";
+        echo "Connexion reussie";
     } 
     catch (PDOException $e) {
             echo "Erreur :" . $e->getMessage();
@@ -16,24 +16,24 @@
             $nom = $_POST["nom"];
             $postnom = $_POST["postnom"];
             $prenom = $_POST["prenom"];
-            $age = $_POST["age"];
             $telephone = $_POST["telephone"];
-            $adresse = $_POST["adresse"];
-            $motivation = $_POST["motivation"];
+            $date = $_POST["date"];
+            $heure = $_POST["heure"];
+            $objet=$_POST["objet"];
 
-            $requete = $bdd->prepare("INSERT INTO cfc VALUES (:nom, :postnom, :prenom, :age, :telephone, :adresse, :motivation)");
+            $requete = $bdd->prepare("INSERT INTO rdv VALUES ( :nom, :postnom, :prenom, :telephone, :date, :heure, :objet)");
             $requete->execute(
                 array(
                 "nom" => $nom,
                 "postnom" => $postnom,
                 "prenom" => $prenom,
-                "age" => $age,
                 "telephone" => $telephone,
-                "adresse" => $adresse,
-                "motivation" => $motivation
+                "date" => $date,
+                "heure" => $heure,
+                "objet" => $objet
                 )
             );
-            echo "<script>alert('Membre ajouté avec succès');</script>";
+           echo "<script>alert('Rendez-vous pris avec succès');</script>";
         }
 
     ?>

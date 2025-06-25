@@ -26,17 +26,17 @@
 
     <main>
         <h2 id="rdv"> Formulaire de Prise de rendez-vous</h2>
-        <form action="" class="rdv" method="post">
+        <form action="http://localhost/PHP/rendez-vous.php" class="rdv" method="post">
             <label for="nom">Tapez votre nom </label> <br>
             <input type="text" id="nom" name="nom" placeholder="ex: Longo" required>
             <br><br>
 
-            <label for="prenom">Tapez votre prénom </label> <br>
-            <input type="text" id="prenom" name="prenom" placeholder="ex: Ainsi" required>
+            <label for="prenom">Tapez votre post-nom </label> <br>
+            <input type="text" id="prenom" name="postnom" placeholder="ex: Ainsi" required>
             <br><br>
 
-            <label for="postnom">Tapez votre post-nom </label> <br>
-            <input type="text" id="postnom" name="postnom" placeholder="ex: Longo" required>
+            <label for="postnom">Tapez votre prénom </label> <br>
+            <input type="text" id="postnom" name="prenom" placeholder="ex: Longo" required>
             <br><br>
 
             <label for="telephone">Tapez votre numero de telephone </label> <br>
@@ -54,13 +54,13 @@
             <label for="objet">Quelle est l'objet de votre rendez-vous ?</label> <br><br>
             <div class="choix">
                 <label><input type="radio" name="objet" value="bapteme" required> Baptême</label>
-                <label><input type="radio" name="objet" value="communion"> Première communion</label>
-                <label><input type="radio" name="objet" value="confession"> Confession</label>
-                <label><input type="radio" name="objet" value="mariage"> Préparation pour le mariage</label>
-                <label><input type="radio" name="objet" value="entretien"> Entretien spirituel</label>
+                <label><input type="radio" name="objet" value="communion" required> Première communion</label>
+                <label><input type="radio" name="objet" value="confession" required> Confession</label>
+                <label><input type="radio" name="objet" value="mariage" required> Préparation pour le mariage</label>
+                <label><input type="radio" name="objet" value="entretien" required> Entretien spirituel</label>
             </div>
-            <br><br>
-
+            <br>
+            <br>
             <input type="submit" name="valider" value="Envoyer">
         </form>
     </main>

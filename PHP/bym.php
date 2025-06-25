@@ -23,7 +23,7 @@ if (isset($_POST["valider"])) {
     $motivation = $_POST["motivation"];
 
 
-    $requete = $bdd->prepare("INSERT INTO bym VALUES (0, :nom, :postnom, :prenom, :age, :telephone, :adresse, :classe, :motivation)");
+    $requete = $bdd->prepare("INSERT INTO bym VALUES (:nom, :postnom, :prenom, :age, :telephone, :adresse, :classe, :motivation)");
     $requete->execute(
         array(
             "nom" => $nom,

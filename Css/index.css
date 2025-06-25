@@ -75,7 +75,7 @@ footer {
 
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
 
         img {
             display: block;
@@ -83,6 +83,7 @@ footer {
             position: relative;
             left: 10px;
             bottom: 10px;
+            cursor: pointer;
     }
 
         body{

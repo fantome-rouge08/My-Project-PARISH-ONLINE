@@ -22,7 +22,7 @@ if (isset($_POST["valider"])) {
     $classe = $_POST["classe"];
     $motivation = $_POST["motivation"];
 
-    $requete = $bdd->prepare("INSERT INTO `groupe KA` VALUES (0, :nom, :postnom, :prenom, :age, :telephone, :adresse, :classe, :motivation)");
+    $requete = $bdd->prepare("INSERT INTO `groupe KA` VALUES (:nom, :postnom, :prenom, :age, :telephone, :adresse, :classe, :motivation)");
     $requete->execute(
         array(
             "nom" => $nom,

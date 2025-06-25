@@ -1,5 +1,5 @@
 body {
-    background: url('../Images_Paroisse/Saint\ Léonard\ Part\ 2.jpeg') no-repeat center center fixed;
+    background: url('../Images_Paroisse/Saint-Léonard-image-1.jpeg') no-repeat center center fixed;
     background-size: cover;
     font-family: 'Segoe UI', Arial, sans-serif;
     color: #222;
@@ -86,7 +86,7 @@ footer {
     }
 
         body{
-            background: url('../Images_Paroisse/Saint\ Léonard\ Part\ 2.jpeg') no-repeat centerfixed;
+            background: url('../Images_Paroisse/Saint-Léonard-image-1.jpeg') no-repeat centerfixed;
             margin: 25px;
         }
 

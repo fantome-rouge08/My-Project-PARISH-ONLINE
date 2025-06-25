@@ -1,4 +1,7 @@
 <?php
+    error_reporting(E_ALL);
+    ini_set('display errors',1);
+
 $servername = "localhost";
 $username = "root";
 $password = ""; 
@@ -18,7 +21,6 @@ if (isset($_POST["valider"])) {
     $adresse = $_POST["adresse"];
     $classe = $_POST["classe"];
     $motivation = $_POST["motivation"];
-    
 
     $requete = $bdd->prepare("INSERT INTO `groupe KA` VALUES (0, :nom, :postnom, :prenom, :age, :telephone, :adresse, :classe, :motivation)");
     $requete->execute(
@@ -34,4 +36,5 @@ if (isset($_POST["valider"])) {
         )
     );
     echo "<script>alert('Membre ajouté avec succès');</script>";
+    
 }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saint-Leonard Officiel</title>
+    <link rel="stylesheet" href="../Css/style-chruch.css">
+    <link rel="stylesheet" href="../Css/responsive.css">
+</head>
+
+<body>
+    <h1>Paroisse Saint-Leonard</h1>
+    <img src="/Images_Paroisse/menu-btn.png" alt="" id="menu-btn">
+    <header>
+        <nav id="main-nav">
+            <li><a href="/HTML/index.html">Accueil</a></li>
+            <li><a href="/HTML/a-propos.html">A propos</a></li>
+            <li><a href="/HTML/groupes-jeunes.html">Groupes et communautes</a></li>
+            <li><a href="/HTML/horaires-messes.html">Horaires des messes</a></li>
+            <li><a href="/HTML/agenda.html">Agenda</a></li>
+            <li><a href="/HTML/rendez-vous.html">Prise de rendez-vous</a></li>
+            <li><a href="/HTML/contacts.html">Contacts</a></li>
+        </nav>
+    </header>
+
+    <main>
+        <h2 id="rdv"> Formulaire d'insciption au Groupe KA</h2>
+        <form action="http://localhost/PHP/groupe_KA.php" method="post">
+            <label for="nom">Tapez votre nom </label> <br>
+            <input type="text" id="nom" name="nom" placeholder="ex: Longo" required>
+            <br>
+            <br>
+
+            <label for="prenom">Tapez votre post-nom </label> <br>
+            <input type="text" id="prenom" name="postnom" placeholder="ex: Ainsi" required>
+            <br>
+            <br>
+
+            <label for="postnom">Tapez votre prénom </label> <br>
+            <input type="text" id="postnom" name="prenom" placeholder="ex: Longo" required>
+            <br>
+            <br>
+
+            <label for="age">Tapez votre age </label> <br>
+            <input type="number" id="age" name="age" placeholder="ex: 18" min="12" max="20" required>
+            <br>
+            <br>
+
+
+            <label for="telephone">Tapez votre numero de téléphone </label> <br>
+            <input type="number" id="telephone" name="telephone" placeholder="ex: +243 999586768" required>
+            <br>
+            <br>
+
+            <label for="adresse">Tapez votre Adresse Complète</label> <br>
+            <textarea name="adresse" id="adresse" placeholder="ex: Avenue de la Paix N°12, Q/CPA , C/Mont-Ngafula" required></textarea>
+            <br>
+            <br>
+            
+            <label for="classe">Tapez votre classe ou niveau d'études </label> <br>
+            <input type="text" id="classe" name="classe" placeholder="ex: 3e Litteraire ou 5e litteraire" required>
+            <br>
+            <br>
+
+            <label for="motivation">Pourquoi voulez-vous intégrer notre communauté ?</label> <br>
+            <textarea id="motivation" name="motivation"></textarea>
+            <br>
+            <br>
+
+             <input type="submit" name="valider" value="Envoyer">
+        </form>
+    </main>
+    <footer>
+        <p> © Paroisse Saint Leonard | Tous droits reserves</p>
+    </footer>
+</body>
+<script src="../Script/script.js"></script>
+</html>

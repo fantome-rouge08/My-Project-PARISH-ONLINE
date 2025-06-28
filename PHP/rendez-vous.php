@@ -1,12 +1,13 @@
     <?php
-
+    error_reporting(E_ALL);
+    ini_set('display errors',1);
+    
     $servername="localhost";
     $username="root";
     $passeword="";
     try {
         $bdd = new PDO("mysql:host=$servername;dbname=parish-rdv", $username, $passeword);
         $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        echo "Connexion reussie";
     } 
     catch (PDOException $e) {
             echo "Erreur :" . $e->getMessage();

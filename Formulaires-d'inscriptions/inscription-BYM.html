@@ -14,19 +14,19 @@
     <img src="/Images_Paroisse/menu-btn.png" alt="" id="menu-btn">
     <header>
         <nav id="main-nav">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="a-propos.html">A propos</a></li>
-            <li><a href="groupes-jeunes.html">Groupes et communautes</a></li>
-            <li><a href="horaires-messes.html">Horaires des messes</a></li>
-            <li><a href="agenda.html">Agenda</a></li>
-            <li><a href="rendez-vous.html">Prise de rendez-vous</a></li>
-            <li><a href="contacts.html">Contacts</a></li>
+            <li><a href="/HTML/index.html">Accueil</a></li>
+            <li><a href="/HTML/a-propos.html">A propos</a></li>
+            <li><a href="/HTML/groupes-jeunes.html">Groupes et communautes</a></li>
+            <li><a href="/HTML/horaires-messes.html">Horaires des messes</a></li>
+            <li><a href="/HTML/agenda.html">Agenda</a></li>
+            <li><a href="/HTML/rendez-vous.html">Prise de rendez-vous</a></li>
+            <li><a href="/HTML/contacts.html">Contacts</a></li>
         </nav>
     </header>
 
     <main>
-        <h2 id="rdv"> Formulaire d'inscription a la Communaute Famille Chretienne</h2>
-        <form action="http://localhost/PHP/cfc.php" method="post">
+        <h2 id="rdv"> Formulaire d'insciption au Groupe Bilenge ya Mwinda</h2>
+        <form action="http://localhost/PHP/bym.php" method="post">
             <label for="nom">Tapez votre nom </label> <br>
             <input type="text" id="nom" name="nom" placeholder="ex: Kipaka" required>
             <br>
@@ -43,7 +43,7 @@
             <br>
 
             <label for="age">Tapez votre Age </label> <br>
-            <input type="number" max="60" id="age" name="age" placeholder="ex: 18" min="25" required>
+            <input type="number" max="25" id="age" name="age" placeholder="ex: 18" min="12" required>
             <br>
             <br>
 
@@ -52,8 +52,14 @@
             <br>
             <br>
 
-            <label for="adresse">Tapez votre Adresse Complète</label> <br>
-            <textarea name="adresse" id="adresse" placeholder="ex: Avenue de la Paix N°12, Q/CPA , C/Mont-Ngafula" required></textarea>
+            <label for="adresse">Tapez votre Adresse Complète </label> <br>
+            <textarea name="adresse" id="adresse" placeholder="ex: Avenue de la Paix N°12, Q/CPA , C/Mont-Ngafula"
+                required></textarea>
+            <br>
+            <br>
+
+            <label for="classe">Tapez votre classe ou niveau d'études </label> <br>
+            <input type="text" id="classe" name="classe" placeholder="ex: 3e Litteraire ou 5e litteraire" required>
             <br>
             <br>
 
@@ -63,7 +69,6 @@
             <br>
 
             <input type="submit" name="valider" value="Envoyer">
-
         </form>
     </main>
     <footer>

@@ -1,6 +1,4 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display errors',1);
 
 $servername = "localhost";
 $username = "root";
@@ -21,7 +19,6 @@ if (isset($_POST["valider"])) {
     $adresse = $_POST["adresse"];
     $classe = $_POST["classe"];
     $motivation = $_POST["motivation"];
-
     $requete = $bdd->prepare("INSERT INTO chorale VALUES (:nom, :postnom, :prenom, :age, :telephone, :adresse, :classe, :motivation)");
     $requete->execute(
         array(

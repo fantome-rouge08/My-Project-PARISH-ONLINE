@@ -1,6 +1,5 @@
 <?php
-    error_reporting(E_ALL);
-    ini_set('display errors',1);
+
 
 $servername = "localhost";
 $username = "root";
@@ -8,7 +7,6 @@ $password = "";
 try {
     $bdd = new PDO("mysql:host=$servername;dbname=parish online", $username, $password); 
     $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Bonjour";
 } catch (PDOException $e) {
     echo "Erreur :" . $e->getMessage();
 }
@@ -17,7 +15,7 @@ if (isset($_POST["valider"])) {
     $nom = $_POST["nom"];
     $postnom = $_POST["postnom"];
     $prenom = $_POST["prenom"];
-    $age = $_POST["age"];
+    $age = $_POST["age"];  
     $telephone = $_POST["telephone"];
     $adresse = $_POST["adresse"];
     $classe = $_POST["classe"];
@@ -27,7 +25,7 @@ if (isset($_POST["valider"])) {
     $requete = $bdd->prepare("INSERT INTO bym VALUES (:nom, :postnom, :prenom, :age, :telephone, :adresse, :classe, :motivation)");
     $requete->execute(
         array(
-            "nom   " => $nom,
+            "nom" => $nom,
             "postnom" => $postnom,
             "prenom" => $prenom,
             "age" => $age,

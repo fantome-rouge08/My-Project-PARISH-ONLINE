@@ -5,7 +5,7 @@
         display: flex;
         width: 7%;
         position: relative;
-        left: 10px;
+        left: 10px; 
         top: 5px;
         cursor: pointer;
     }

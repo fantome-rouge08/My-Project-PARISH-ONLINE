@@ -8,7 +8,7 @@ body {
     color: white;
 }
 
-#menu-btn{
+#menu-btn {
     display: none;
 }
 
@@ -62,17 +62,23 @@ a {
 
 .a-propos {
     font-size: 17px;
-    max-width: 900px;
+    max-width: 750px;
     padding: 2em;
     margin: 2em auto;
     background: rgba(20, 40, 40, 0.80);
     border-radius: 12px;
     color: #fff;
-    
+
 
 }
 
-.a-propos h2,h3{
+h2{
+    color: black;
+    font-size: 30px;
+}
+
+.a-propos h2,
+h3 {
     color: #e1b421;
     margin-bottom: 1em;
 }
@@ -85,6 +91,7 @@ a {
 footer {
     text-align: center;
     margin-top: 90px;
+    font-weight: 500;
 }
 
 
@@ -95,7 +102,6 @@ footer {
 #title-groupe {
     padding: 30px;
     margin: 5px;
-    font-size: 1.5rem;
 }
 
 
@@ -103,8 +109,9 @@ footer {
     gap: 40px;
     display: flex;
     flex-wrap: wrap;
-    
+
 }
+
 .groupe {
     text-align: center;
     width: 300px;
@@ -131,25 +138,26 @@ footer {
 
 /*Style pour les horaires de messe*/
 
-.messe-container{
+.messe-container {
     display: inline-block;
     margin: 25px;
-    
+
 }
-.messe-container h2{
+
+.messe-container h2 {
     margin-top: 5px;
     font-size: 30px;
 }
 
-.hor-messe{
-   display: grid;
-   grid-template-columns: repeat(4,1fr);
-   padding: 15px;
-   flex-wrap: wrap;
-   gap: 80px;
+.hor-messe {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 15px;
+    flex-wrap: wrap;
+    gap: 80px;
 }
 
-.messe{
+.messe {
     display: inline-block;
     padding: 5px;
     text-align: center;
@@ -163,7 +171,7 @@ footer {
 /* Style pour la page d'agenda*/
 
 .calendrier-annuel {
-    display: inline-block; 
+    display: inline-block;
     padding: 2rem;
 }
 
@@ -198,7 +206,7 @@ footer {
 
 .calendrier {
     display: grid;
-    grid-template-columns: repeat(7,1fr);
+    grid-template-columns: repeat(7, 1fr);
     gap: 5px;
     padding: 5px;
     border-radius: 10px;
@@ -217,8 +225,9 @@ footer {
     border-radius: 5px;
 }
 
-.event{
-    color: #e1b421;;
+.event {
+    color: #e1b421;
+    ;
     font-size: 12px;
 }
 
@@ -298,6 +307,20 @@ footer {
     font-size: 22px;
 }
 
+.contact{
+    background-color: #3f4141b6;
+    max-width: 700px;
+    padding: 2em;
+    margin: 2em auto;
+}
+
+.contact-text{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
 
 /* Style pour la page de prise de rendez-vous */
 
@@ -331,7 +354,6 @@ form {
 
 #rdv {
     margin-left: 30px;
-    color: white
 }
 
 .btn-rdv {
@@ -342,27 +364,161 @@ form {
     background: rgb(199, 199, 212);
 }
 
-
-
-/* Style des boutons pour la page contacts*/
-
-
-.contact {
-    margin: 30px;
-    font-size: 21px;
+/* Animation sur les liens de navigation */
+nav a {
+    transition: background 0.3s, color 0.3s, transform 0.2s;
 }
 
-.contact-text {
-    padding: 20px;
-    background:#3f4141b4;
-    border-radius: 10px;
-    color: #fff;
+nav a:hover,
+nav a:focus {
+    transform: scale(1.08);
 }
 
-.footer-contact {
-    margin-top: 80px;
-    color: white;
-    font-size: 18px;
+/* Animation sur les cartes de groupes */
+.groupe {
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.groupe:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(20, 40, 40, 0.25);
+}
 
+/* Apparition progressive des formulaires */
+form {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInForm 0.8s ease-out 0.2s forwards;
+}
+
+@keyframes fadeInForm {
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* Effet de sélection sur les boutons radio */
+.choix input[type="radio"]:checked+span,
+.choix input[type="radio"]:checked {
+    accent-color: #2141e1;
+    box-shadow: 0 0 0 4px #e1b42144;
+    transition: box-shadow 0.2s;
+}
+
+.choix label {
+    transition: background 0.2s;
+}
+
+.choix input[type="radio"]:checked~label {
+    background: #10887022;
+}
+
+/* Animation d’apparition générale pour tous les éléments principaux */
+h1,
+h2,
+h3,
+p,
+img,
+.groupe,
+.a-propos,
+.messe,
+.mois,
+.bio,
+.btn-rdv,
+form,
+nav a,
+.choix label {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s cubic-bezier(.23, 1.02, .64, 1.01) forwards;
+}
+
+h1 {
+    animation-delay: 0.6s;
+}
+
+h2,
+#rdv {
+    animation-delay: 0.6s;
+}
+
+h3 {
+    animation-delay: 0.7s;
+}
+
+p,
+.a-propos {
+    animation-delay: 0.7s;
+}
+
+img,
+.groupe,
+.messe,
+.mois,
+.bio {
+    animation-delay: 0.7s;
+}
+
+form,
+.btn-rdv {
+    animation-delay: 0.7s;
+}
+
+nav a,
+.choix label {
+    animation-delay: 0.7s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* Animation sur les boutons */
+input[type="submit"],
+.btn-rdv,
+button {
+    transition: background 0.3s, color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+input[type="submit"]:hover,
+.btn-rdv:hover,
+button:hover {
+    background: #e1b421;
+    color: #222;
+    transform: scale(1.05);
+    box-shadow: 0 4px 16px #e1b42144;
+}
+
+/* Animation sur les images */
+img {
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+img:hover {
+    transform: scale(1.04) rotate(-2deg);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+}
+
+/* Animation sur les sections */
+section,
+.a-propos,
+.bio,
+.messe,
+.mois {
+    transition: box-shadow 0.3s, background 0.3s, transform 0.3s;
+}
+
+section:hover,
+.a-propos:hover,
+.bio:hover,
+.messe:hover,
+.mois:hover ,
+.groupe:hover{
+    box-shadow: 0 8px 32px #10887022;
+    background:rgba(26, 71, 71, 0.242);
+    transform: translateY(-6px) scale(1.01);
+}

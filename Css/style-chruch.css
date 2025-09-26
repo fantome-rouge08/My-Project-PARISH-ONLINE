@@ -519,6 +519,12 @@ section:hover,
 .mois:hover ,
 .groupe:hover{
     box-shadow: 0 8px 32px #10887022;
-    background:rgba(26, 71, 71, 0.242);
+    background-color: #082721b3;
     transform: translateY(-6px) scale(1.01);
+}
+
+
+.groupe:hover,
+.groupe:focus{
+    background-color: #150a0791;
 }

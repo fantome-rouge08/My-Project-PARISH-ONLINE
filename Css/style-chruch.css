@@ -72,7 +72,7 @@ a {
 
 }
 
-h2{
+h2 {
     color: black;
     font-size: 30px;
 }
@@ -307,14 +307,14 @@ footer {
     font-size: 22px;
 }
 
-.contact{
+.contact {
     background-color: #3f4141b6;
     max-width: 700px;
     padding: 2em;
     margin: 2em auto;
 }
 
-.contact-text{
+.contact-text {
     color: white;
     font-size: 20px;
     font-weight: bold;
@@ -516,8 +516,8 @@ section:hover,
 .a-propos:hover,
 .bio:hover,
 .messe:hover,
-.mois:hover ,
-.groupe:hover{
+.mois:hover,
+.groupe:hover {
     box-shadow: 0 8px 32px #10887022;
     background-color: #082721b3;
     transform: translateY(-6px) scale(1.01);
@@ -525,6 +525,16 @@ section:hover,
 
 
 .groupe:hover,
-.groupe:focus{
+.groupe:focus {
     background-color: #150a0791;
+}
+
+#calendrier-mensuel {
+    background: rgba(52, 85, 68, 0.95);
+    /* Vert foncé opaque */
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 0 auto 2rem auto;
+    max-width: 650px;
+    box-shadow: 0 4px 24px rgba(20, 40, 40, 0.25);
 }

@@ -159,7 +159,7 @@
     form {
         width: 80%;
         font-size: 22px;
-        background-color: #3f41416b;
+        background-color: #3f4141af;
         margin: 10px;
         margin-top: 20px;
         border-radius: 10px;
@@ -171,7 +171,7 @@
 
     #rdv {
         margin-left: 30px;
-        color: white
+        color: black;
     }
 
     .btn-rdv {

@@ -308,6 +308,7 @@ footer {
 }
 
 .contact {
+    border-radius: 20px;
     background-color: #3f4141b6;
     max-width: 700px;
     padding: 2em;
@@ -341,7 +342,7 @@ footer {
 
 form {
     font-size: 22px;
-    background-color: #3f41416b;
+    background-color: #3f414195;
     margin-left: 30px;
     margin-top: 20px;
     margin-right: 600px;
@@ -514,19 +515,18 @@ section,
 
 section:hover,
 .a-propos:hover,
-.bio:hover,
 .messe:hover,
 .mois:hover,
 .groupe:hover {
     box-shadow: 0 8px 32px #10887022;
-    background-color: #08272167;
+    background-color: #0827218a;
     transform: translateY(-6px) scale(1.01);
 }
 
 
 .groupe:hover,
 .groupe:focus {
-    background-color: #150a0791;
+    background-color: #0d347c9a;
 }
 
 #calendrier-mensuel {

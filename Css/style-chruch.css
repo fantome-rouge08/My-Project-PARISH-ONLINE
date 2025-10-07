@@ -519,7 +519,7 @@ section:hover,
 .mois:hover,
 .groupe:hover {
     box-shadow: 0 8px 32px #10887022;
-    background-color: #082721b3;
+    background-color: #08272167;
     transform: translateY(-6px) scale(1.01);
 }
 
@@ -537,4 +537,92 @@ section:hover,
     margin: 0 auto 2rem auto;
     max-width: 650px;
     box-shadow: 0 4px 24px rgba(20, 40, 40, 0.25);
+}
+
+/* Modern Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #0d483e;
+    padding: 0 2rem;
+    border-radius: 0 0 18px 18px;
+    box-shadow: 0 4px 24px rgba(20, 40, 40, 0.12);
+    margin-bottom: 2rem;
+}
+
+.nav-logo a {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #e1b421;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 8px 18px;
+    border-radius: 6px;
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+}
+
+.nav-links li a:hover,
+.nav-links li a:focus,
+.nav-links li.active a {
+    background: #e1b421;
+    color: #0d483e;
+    transform: scale(1.08);
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: #e1b421;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* Responsive (à compléter dans responsive.css) */
+@media (max-width: 900px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 2rem;
+        background: #0d483e;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 1.5rem 2rem;
+        border-radius: 12px;
+        box-shadow: 0 8px 32px #10887022;
+        z-index: 100;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .nav-toggle {
+        display: flex;
+    }
 }

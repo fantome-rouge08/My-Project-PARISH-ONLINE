@@ -65,12 +65,15 @@
 
     .hor-messe {
         display: grid;
+        width: 125%;
+        
         grid-template-columns: repeat(2, 1fr);
     }
 
     .messe {
         width: 100%;
     }
+    
 
     /* Responsive design pour l'agenda*/
 

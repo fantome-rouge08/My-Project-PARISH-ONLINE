@@ -2,7 +2,7 @@
 
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     background: url('../Images_Paroisse/Saint-Léonard-image-2.jpeg') no-repeat center fixed;
     background-size: cover;
     color: white;
@@ -518,8 +518,8 @@ section:hover,
 .messe:hover,
 .mois:hover,
 .groupe:hover {
-    box-shadow: 0 8px 32px #10887022;
-    background-color: #0827218a;
+    box-shadow: 0 8px 32px #697b0690;
+    background-color: #08272183;
     transform: translateY(-6px) scale(1.01);
 }
 

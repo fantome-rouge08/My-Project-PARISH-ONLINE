@@ -158,9 +158,9 @@
 
     form {
         width: 80%;
-        font-size: 22px;
+        font-size: 17px;
         background-color: #3f4141af;
-        margin: 10px;
+        margin: 5px;
         margin-top: 20px;
         border-radius: 10px;
         border: 3px solid #1c1a1a;
@@ -168,9 +168,9 @@
     }
 
 
-
     #rdv {
-        margin-left: 30px;
+        font-size: 17px;
+        margin-left: 20px;
         color: black;
     }
 
@@ -182,12 +182,14 @@
         background: rgb(199, 199, 212);
     }
 
-
+    .choix label {
+        font-size: 17px;
+    }
 
     /* Responsive design pour les groupes et communautes*/
 
     #title-groupe {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .communauty-container {
@@ -233,8 +235,8 @@
 
 
     .bio {
-        font-size: 18px;
-        font-weight: 500;
+        font-size: 15px;
+        font-weight: 450;
         color: white;
         max-width: 600px;
         padding-top: 0px;

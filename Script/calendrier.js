@@ -42,7 +42,7 @@ function genererCalendrierMois(mois) {
     };
 
     const titre = document.createElement("h3");
-    titre.textContent = `${moisNoms[mois]} ${annee}`;
+    titre.textContent = `${moisNoms[mois]}`;
     titre.style.flex = "1";
     titre.style.textAlign = "center";
 

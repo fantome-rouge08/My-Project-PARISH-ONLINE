@@ -245,6 +245,11 @@ footer {
     background-color: none;
 }
 
+#calendrier-mensuel .btn-rdv {
+    width: 50px; /* Réduction de la largeur pour des boutons plus compacts */
+    height: 25px; /* Réduction de la hauteur */
+    font-size: 12px; /* Réduction de la taille de police pour rendre les flèches plus petites */
+}
 
 
 /* Style pour les pages de chaque groupe qui s'affichent  lorqu'on clique sur l'image* (Page_des_groupes)*/
@@ -519,7 +524,7 @@ section:hover,
 .mois:hover,
 .groupe:hover {
     box-shadow: 0 8px 32px #697b0690;
-    background-color: #08272183;
+    background-color: #082721a5;
     transform: translateY(-6px) scale(1.01);
 }
 

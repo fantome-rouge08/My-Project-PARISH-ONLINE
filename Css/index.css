@@ -83,7 +83,7 @@ footer {
 
     img {
         display: block;
-        width: 7%;
+        width: 13%;
         position: relative;
         left: 10px;
         bottom: 10px;
@@ -125,20 +125,22 @@ footer {
         text-align: center;
     }
 
+
     #main-nav {
         position: fixed;
         top: 0;
         left: -5px;
         right: auto;
         width: 220px;
-        height: 50%;
+        height: 50vh; /* Couvre toute la hauteur de l'écran */
         background: #3f4141bb;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
         border-radius: 8px 0 0 8px;
         transform: translateX(-100%);
         transition: transform 0.3s;
         display: block;
         padding-top: 60px;
+        z-index: 1000; /* Assure qu'il est au-dessus du contenu */
     }
 
     /* Quand le menu est ouvert */
@@ -146,7 +148,24 @@ footer {
         transform: translateX(0);
     }
 
+    /* Overlay pour bloquer l'interaction avec la page */
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999; /* Juste en dessous du menu */
+        display: none;
+    }
+
+    .overlay.active {
+        display: block;
+    }
+
 }
+
 
 /* Animation d’apparition en fondu et montée */
 @keyframes fadeInUp {

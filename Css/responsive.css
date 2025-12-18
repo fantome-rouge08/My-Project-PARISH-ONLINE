@@ -3,7 +3,7 @@
     /* Responsive design generale*/
     #menu-btn{
         display: flex;
-        width: 7%;
+        width: 14%;
         position: relative;
         left: 10px; 
         top: 5px;
@@ -65,7 +65,7 @@
 
     .hor-messe {
         display: grid;
-        width: 125%;
+        width: 100%;
         
         grid-template-columns: repeat(2, 1fr);
     }
@@ -75,47 +75,31 @@
     }
     
 
-    /* Responsive design pour l'agenda*/
-
+    /* Responsive design pour l'agenda */
     #title-agenda {
         text-align: center;
         padding: 10px;
         margin-top: -10px;
+        font-size: 20px; /* Réduction de la taille pour mobile */
     }
 
     .calendrier-annuel {
-        display: inline-block;
-        padding: 2rem;
-    }
-
-
-
-    .mois {
-        display: inline-block;
-        margin-bottom: 3rem;
-        margin-right: 5rem;
-        padding: 1rem;
-        background-color: #345544;
-        border-radius: 10px;
-        width: 475px;
-
-    }
-
-    .mois h3 {
-        background-color: #9291912c;
-        color: white;
-        padding: 0.5rem;
-        border-radius: 5px;
+        display: block; /* Changé de inline-block à block pour centrer et prendre toute la largeur */
+        padding: 1rem; /* Réduction du padding pour mobile */
         text-align: center;
+        width: 95%; /* Prend toute la largeur disponible */
     }
 
     .calendrier {
         display: grid;
         grid-template-columns: repeat(7, 1fr);
-        gap: 5px;
+        gap: 0px; /* Supprime complètement l'espace entre cellules pour maximiser l'espace */
         padding: 5px;
         border-radius: 10px;
-        width: 10px;
+        width: 100%; /* Prend toute la largeur du conteneur parent */
+        max-width: 320px; /* Réduit la largeur max pour éviter le débordement sur petits écrans */
+        margin: 0 auto; /* Centre la grille */
+        overflow: hidden; /* Empêche tout débordement visible */
     }
 
 
@@ -123,24 +107,37 @@
         color: white;
         background-color: #9291912c;
         border: 1px solid #ccc;
-        padding: 10px;
+        padding: 1px; /* Réduction encore plus du padding */
         text-align: center;
         font-weight: bold;
         border-radius: 5px;
+        font-size: 10px; /* Réduction de la taille de police pour plus de compacité */
+        min-height: 20px; /* Réduction de la hauteur minimale */
+        box-sizing: border-box; /* Inclut padding et border dans la largeur/hauteur totale */
+        overflow: hidden; /* Coupe le contenu qui dépasse */
     }
 
     .nom-jour {
         background-color: #9291912c;
         color: white;
         text-align: center;
-        padding: 2px;
-        width: 90x;
-        font-size: 15px;
+        padding: 1px; /* Réduction du padding */
+        font-size: 10px; /* Réduction pour mobile */
+        width: 100%; /* Correction : au lieu de 90x, prend la largeur de la cellule */
+        box-sizing: border-box; /* Inclut padding et border dans la largeur/hauteur totale */
+        overflow: hidden; /* Coupe le contenu qui dépasse */
     }
 
 
     .jour-vide {
-        background-color: none;
+        background-color: transparent; /* Au lieu de none, pour cohérence */
+    }
+
+    /* Ajustements pour les boutons de navigation du calendrier */
+    #calendrier-mensuel .btn-rdv {
+        width: 50px; /* Réduction de la largeur pour des boutons plus compacts */
+        height: 25px; /* Réduction de la hauteur */
+        font-size: 12px; /* Réduction de la taille de police pour rendre les flèches plus petites */
     }
 
 
@@ -189,6 +186,10 @@
 
     /* Responsive design pour les groupes et communautes*/
 
+    #title-groupe {
+        font-size: 24px;
+    }
+
     .communauty-container {
         width: 90%;
         background: #393e3d6b;
@@ -215,7 +216,14 @@
         border-radius: 15px;
     }
 
+    .groupe{
+        width: 73%;
+    }
 
+    .groupe img{
+        width: 80%;
+        height: 65%;
+    }
 
     .bio h3,
     h4 {
@@ -257,21 +265,11 @@
         padding: 20px;
         text-align: center;
         margin: 20px;
-        font-size: 19px;
-        font-weight: bold;
-        color: white;
         text-align: center;
     }
 
-
-    .contact {
-        padding: 5px;
-        margin: 30px;
-        font-size: 21px;
-        font-weight: bold;
-        color: rgb(0, 0, 0);
-
-
+    .contact-text{
+        font-size: 16px;
     }
 
     .footer-contact {
@@ -286,19 +284,36 @@
         left: -30px;
         right: auto;
         width: 220px;
-        height: 50%;
-        background:#3f4141bb;
+        height: 50vh; /* Couvre toute la hauteur de l'écran */
+        background: #3f4141bb;
         box-shadow: 0 2px 8px rgba(0,0,0,0.2);
         border-radius: 8px 0 0 8px;
         transform: translateX(-100%);
         transition: transform 0.3s;
         display: block;
         padding-top: 60px;
+        z-index: 1000; /* Assure qu'il est au-dessus du contenu */
     }
-
+    
     /* Quand le menu est ouvert */
     #main-nav.open {
         transform: translateX(0);
+    }
+    
+    /* Overlay pour bloquer l'interaction avec la page */
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999; /* Juste en dessous du menu */
+        display: none;
+    }
+    
+    .overlay.active {
+        display: block;
     }
 }
 

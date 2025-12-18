@@ -1,17 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const menuBtn = document.getElementById("menu-btn");
-    const nav = document.getElementById("main-nav");
-
-    menuBtn.addEventListener("click", function(event) {
-        nav.classList.toggle("open");
-        event.stopPropagation(); 
-    });
-
-    nav.addEventListener("click", function(event) {
-        event.stopPropagation(); 
-    });
-
-    document.addEventListener("click", function() {
-        nav.classList.remove("open");
-    });
+    const toggle = document.querySelector('#menu-btn'); // Utilise #menu-btn au lieu de .nav-toggle
+    const nav = document.querySelector('#main-nav');
+    const overlay = document.querySelector('.overlay');
+    if (toggle && nav && overlay) {
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('open');
+            overlay.classList.toggle('active');
+        });
+        // Fermer le menu en cliquant sur l'overlay
+        overlay.addEventListener('click', () => {
+            nav.classList.remove('open');
+            overlay.classList.remove('active');
+        });
+    }
 });

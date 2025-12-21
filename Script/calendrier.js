@@ -20,7 +20,7 @@ function genererCalendrierMois(mois) {
     nav.style.marginBottom = "1rem";
 
     const prevBtn = document.createElement("button");
-    prevBtn.textContent = "◀";
+    prevBtn.innerHTML = "&larr;";
     prevBtn.className = "btn-rdv";
     prevBtn.disabled = (mois === 0);
     prevBtn.onclick = () => {
@@ -31,7 +31,7 @@ function genererCalendrierMois(mois) {
     };
 
     const nextBtn = document.createElement("button");
-    nextBtn.textContent = "⯈";
+    nextBtn.innerHTML = "&rarr;";
     nextBtn.className = "btn-rdv";
     nextBtn.disabled = (mois === 11);
     nextBtn.onclick = () => {

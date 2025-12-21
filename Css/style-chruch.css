@@ -164,7 +164,7 @@ footer {
     justify-content: center;
     font-size: 18px;
     font-weight: bold;
-    background: rgba(20, 40, 40, 0.80);
+    background: rgba(21, 35, 35, 0.872);
     border-radius: 10px;
 }
 
@@ -302,9 +302,9 @@ footer {
 }
 
 #joins {
-    color: white;
+    color:  violet;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .para-joins {
@@ -521,10 +521,9 @@ section,
 section:hover,
 .a-propos:hover,
 .messe:hover,
-.mois:hover,
-.groupe:hover {
+.mois:hover {
     box-shadow: 0 8px 32px #697b0690;
-    background-color: #082721a5;
+    background-color: #05241e91;
     transform: translateY(-6px) scale(1.01);
 }
 
